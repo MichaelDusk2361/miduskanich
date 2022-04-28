@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EducationComponent } from './education/education.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { SkillsComponent } from './skills/skills.component';
+import { SkillComponent } from './skill/skill.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { AboutMeComponent } from './about-me/about-me.component';
     HeadingComponent,
     HeaderComponent,
     EducationComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    SkillsComponent,
+    SkillComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

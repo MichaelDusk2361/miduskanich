@@ -1,19 +1,25 @@
 @import "../assets/colors.scss";
+@import "../assets/breakpoints.scss";
+
 :host {
-  display: grid;
-  width: 80vw;
-  max-width: 170rem;
-  margin: 0 auto;
-  background-color: $color-5;
+  @include media(">=phone") {
+    display: grid;
+    width: 80vw;
+    max-width: 170rem;
+    margin: 0 auto;
+    background-color: $color-5;
+  }
 }
 
 section {
   padding: 1rem;
 }
 
-.education {
+.skills {
+  padding-top: 2rem;
+}
+.education-and-skills{
   margin-top: 6rem;
   background-color: $color-1;
   color: $color-5;
 }
-

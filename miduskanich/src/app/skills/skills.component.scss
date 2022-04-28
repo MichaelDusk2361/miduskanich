@@ -1,0 +1,49 @@
+@import "../../assets/breakpoints.scss";
+
+:host {
+  display: block;
+  padding-bottom: 3rem;
+}
+
+h2 {
+  margin-top: 4rem;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 0.3rem;
+  margin-left: 4rem;
+  @include media("<=tablet") {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.skills {
+  display: grid;
+  justify-content: center;
+  @include media(">=tablet") {
+    margin: 0 auto;
+    max-width: 100rem;
+    column-gap: 2.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "sw media"
+      "sw lang";
+    &__software {
+      h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+      grid-row: span 2;
+    }
+    &__languages {
+      align-self: end;
+    }
+  }
+}
+
+mid-skill {
+  margin-bottom: 0.5rem;
+}
