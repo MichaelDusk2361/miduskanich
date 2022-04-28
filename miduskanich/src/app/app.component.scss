@@ -1,0 +1,8 @@
+@import "../assets/colors.scss";
+:host {
+  display: grid;
+  width: 80vw;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: $color-5;
+}
