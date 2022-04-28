@@ -1,0 +1,46 @@
+@import "../../assets/colors.scss";
+:host {
+  display: block;
+  & :first-child {
+    margin-top: 0;
+  }
+}
+
+h2 {
+  margin-top: 4rem;
+}
+
+.education {
+  &__grid {
+    h3,
+    p {
+      margin: 0;
+    }
+    display: grid;
+    row-gap: 2rem;
+    align-items: center;
+    grid-template-columns: 14rem 1rem 0.3rem 1rem auto;
+  }
+  &__text {
+    grid-column: 5;
+    margin-left: 3rem;
+  }
+  &__timestamp {
+    text-align: center;
+  }
+  &__timestamp-marker {
+    border: 0.3rem $color-5 solid;
+    border-radius: 50%;
+    background-color: $color-1;
+    width: 2.3rem;
+    height: 2.3rem;
+    grid-column: 2 span 3;
+  }
+  &__timestamp-line {
+    height: 100%;
+    background-color: $color-5;
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+}
