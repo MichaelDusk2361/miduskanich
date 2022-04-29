@@ -14,7 +14,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     &__portrait {
-      background-image: url("../../assets/me.png");
+      background-image: url("../../assets/me.jpg");
       background-size: cover;
       background-position: center;
       @include media("<=tablet") {

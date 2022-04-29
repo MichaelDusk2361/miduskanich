@@ -4,6 +4,13 @@
 :host {
   @include media(">=phone") {
     display: grid;
+    width: 95vw;
+    max-width: 170rem;
+    margin: 0 auto;
+    background-color: $color-5;
+  }
+  @include media(">=tablet") {
+    display: grid;
     width: 80vw;
     max-width: 170rem;
     margin: 0 auto;
@@ -22,4 +29,8 @@ section {
   margin-top: 6rem;
   background-color: $color-1;
   color: $color-5;
+}
+
+.projects {
+  margin-top: 6rem;
 }
