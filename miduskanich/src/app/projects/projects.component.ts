@@ -14,7 +14,7 @@ export class ProjectsComponent {
         'This project is part of the three semester innovation lab at the FH Technikum Wien. Therefore, I am currently team-lead of a five person group, aiming to develop a full stack application used for graph-based social impulse analysis.',
     },
     {
-      title: 'Untiy Boids Simulation',
+      title: 'Unity Boids Simulation',
       image: 'assets/boid.png',
       description:
         'With the primary target of learning Data oriented Design (Unity DOTS) and optimization techniques using compute shaders, I am currently developing a boid simulation in Unity. It emulates flock- / swarm-like navigation behavior and exposes many learning opportunities for algorithm optimization.',
