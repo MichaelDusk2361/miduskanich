@@ -1,0 +1,7 @@
+@import "../../assets/colors.scss";
+a {
+  &:link,
+  &:visited {
+    color: $color-1;
+  }
+}

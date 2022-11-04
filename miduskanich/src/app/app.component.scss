@@ -2,20 +2,9 @@
 @import "../assets/breakpoints.scss";
 
 :host {
-  @include media(">=phone") {
-    display: grid;
-    width: 95vw;
-    max-width: 170rem;
-    margin: 0 auto;
-    background-color: $color-5;
-  }
-  @include media(">=tablet") {
-    display: grid;
-    width: 80vw;
-    max-width: 170rem;
-    margin: 0 auto;
-    background-color: $color-5;
-  }
+  background-color: $color-5;
+  display: grid;
+  align-content: center;
 }
 
 section {
