@@ -16,6 +16,7 @@ import { ASiaComponent } from './a-sia/a-sia.component';
 import { IotAquariumComponent } from './iot-aquarium/iot-aquarium.component';
 import { CurriculumVitaeComponent } from './curriculum-vitae/curriculum-vitae.component';
 import { IotAquariumExposeeComponent } from './iot-aquarium-exposee/iot-aquarium-exposee.component';
+import { CertificatesComponent } from './certificates/certificates.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { IotAquariumExposeeComponent } from './iot-aquarium-exposee/iot-aquarium
     ASiaComponent,
     IotAquariumComponent,
     CurriculumVitaeComponent,
-    IotAquariumExposeeComponent
+    IotAquariumExposeeComponent,
+    CertificatesComponent
   ],
   imports: [
     BrowserModule,

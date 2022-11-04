@@ -141,3 +141,10 @@ img {
     margin-left: 6rem;
   }
 }
+
+sup {
+  i{
+    white-space: nowrap;
+    color: darken($color-1, 40%);
+  }
+}

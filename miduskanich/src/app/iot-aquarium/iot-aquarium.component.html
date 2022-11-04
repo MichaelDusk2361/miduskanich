@@ -65,321 +65,607 @@ planned requirements for the first prototype.
 
 <ul class="requirements">
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 288: Temperature Sensing IoT
-    <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: Temperature Sensing
+    <sup><i>IoT Aquarium\Embedded</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 299: NTC sensing IoT
-    <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: NTC sensing
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Temp Sensor User wants
+    measurements via an NTC sensor <sup><i>IoT Aquarium\Embedded</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 300: PT100/1000 sensing IoT
-    <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: PT100/1000 sensing
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Temp Sensor User wants
+    measurements via Platinum sensor <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Temperature Sensor Software
+    <sup><i>IoT Aquarium\Embedded\Software</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Temp Sensor User wants
+    software to post-process measured values
+    <sup><i>IoT Aquarium\Embedded\Software</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Temp Sensor User wants
+    software to calibrate and correct raw measured values
+    <sup><i>IoT Aquarium\Embedded\Software</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 291: Placeholder for planned stuff
-    IoT Aquarium
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: Master Controller
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: MCU design
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Embedded User wants a main
+    CPU module <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: PC API
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Embedded PC User wants a
+    Serial API to configure and read all available parameters
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: User wants to have PC that
+    publishes and subscribes to MQTT server values
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Generic control loops
+    <sup><i>IoT Aquarium\Embedded\Software</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Controller User wants
+    generic configurable control loops
+    <sup><i>IoT Aquarium\Embedded\Software</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Timekeeping/distribution
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Time Service users want high
+    accuracy timing <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Time Service Users want a
+    deterministic distribution system <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Power Supply
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: The Embedded system wants a
+    24V isolated power supply <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 292: Master Controller IoT
-    <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: Safe Power Switching
+    <sup><i>IoT Aquarium\Embedded</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 296: generic MCU design IoT
-    <sup><i> Aquarium\Embedded\Hardware</i></sup>
-  </li>
-  <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 301: PC api interface IoT
-    <sup><i> Aquarium\Embedded</i></sup>
-  </li>
-  <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 309: Generic control loops IoT
-    <sup><i> Aquarium\Embedded\Software</i></sup>
-  </li>
-  <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 310: Timekeeping/distribution
-    IoT <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Power Measurement
+    <sup><i>IoT Aquarium\Embedded</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 314: master timekeeping needs
-    RTC hardware IoT <sup><i> Aquarium\Embedded\Hardware</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Power Switch User wants to
+    measure true RMS power for each switch channel
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: All-Phase relay switch
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 315: master time distribution
-    needs dependency specs IoT <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Power Switch User wants to
+    switch all phases of each channel on/off
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Chopping Dimmer
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Power Switch User wants to
+    dim each channel individually
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Power Switch software
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Power Switch User wants to
+    get/set warnings for various abnormal conditions
+    <sup><i>IoT Aquarium\Embedded</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 293: Safe Power Switching IoT
-    <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: Light Spectrum Sensing
+    <sup><i>IoT Aquarium\Embedded</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 298: Power Measurement IoT
-    <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Intensity sensors
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Light Sensor User wants
+    light intensity sensors <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 304: All-Phase relay switch IoT
-    <sup><i> Aquarium\Embedded\Hardware</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Spectrum sensors
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Light Sensor User wants
+    light spectrum sensors <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 305: Dimmer design IoT
-    <sup><i> Aquarium\Embedded\Hardware</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Light spectrum software
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Light Sensor User wants
+    light sensor software to post-process sensor values
+    <sup><i>IoT Aquarium\Embedded</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 294: Light Spectrum Sensing IoT
-    <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: Flow Sensing
+    <sup><i>IoT Aquarium\Embedded</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 302: Intensity sensors IoT
-    <sup><i> Aquarium\Embedded\Hardware</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Flow Sensing Hardware
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Flow Sensor User wants flow
+    meter to measure with constant wavecount
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Flow Sensor User wants to
+    mount sensor on pipes <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 303: Spectrum sensors IoT
-    <sup><i> Aquarium\Embedded\Hardware</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Flow sensing Software
+    <sup><i>IoT Aquarium\Embedded\Software</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Flow Sensor User wants flow
+    meter software to post-process flow rate values
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Flow Sensor User wants flow
+    meter software to allow calibration
+    <sup><i>IoT Aquarium\Embedded\Software</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 295: Flow Sensing IoT
-    <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: PH sensing
+    <sup><i>IoT Aquarium\Embedded</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 297: Analog Sensing Hardware
-    IoT <sup><i> Aquarium\Embedded\Hardware</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: PH sensing frontend
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 311: flow meter frontend needs
-    pll IoT <sup><i> Aquarium\Embedded\Hardware</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: PH Sensor User wants PH
+    measurements to be via direct analog frontend
+    <sup><i>IoT Aquarium\Embedded\Hardware</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: PH sensing/calibration
+    software <sup><i>IoT Aquarium\Embedded\Software</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 312: flow meter needs
-    frequency measurement IoT <sup><i> Aquarium\Embedded\Hardware</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: PH Sensor User wants to
+    calibrate PH sensor <sup><i>IoT Aquarium\Embedded\Software</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 313: flow meter frontend needs
-    transducers IoT <sup><i> Aquarium\Embedded\Hardware</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: PH Sensor User wants
+    software to post-process PH measurements
+    <sup><i>IoT Aquarium\Embedded\Software</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 306: PH sensing IoT
-    <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: Aquarium Lighting
+    <sup><i>IoT Aquarium\Embedded</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 307: PH sensing frontend IoT
-    <sup><i> Aquarium\Embedded\Hardware</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Lighting module
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Lighting User wants
+    single-color dimmable LED module <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Lighting User wants to
+    control the LED module parameters via ModBUS
+    <sup><i>IoT Aquarium\Embedded</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 308: PH sensing/calibration
-    software IoT <sup><i> Aquarium\Embedded\Software</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Lighting power supply
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Lighting User wants
+    dedicated power supply for LED modules
+    <sup><i>IoT Aquarium\Embedded</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 316: Aquarium Lighting IoT
-    <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: Data Visualization
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 317: LED module IoT
-    <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Graph Data
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to adjust
+    time scale of graphs <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to see
+    Events in their graphs <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to
+    manually enter graph data points <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 318: LED power supply IoT
-    <sup><i> Aquarium\Embedded</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Custom Graphs
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to CRUD
+    additional graphs <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to CRUD
+    title, ideal value, unit and tolerance
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 326: Data Visualization IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: Temperature GUI
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 332: Graph Data IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Display Temperature
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 338: Web GUI User wants to
-    adjust time scale of graphs IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to see
+    graph of temperature over time <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 339: Web GUI User wants to see
-    Events in their graphs IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
-  </li>
-  <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 383: Web GUI User wants to
-    manually enter graph data points IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to set
+    their temperature unit to Celsius or Kelvin
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 385: Custom Graphs IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Control Temperature
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 384: Web GUI User wants to
-    CRUD additional graphs IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to set
+    Temperature <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Temperature Warning
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 386: Web GUI User wants to
-    CRUD title, ideal value, unit and tolerance IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to be
+    alerted if temperature is instable, or not the set target
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to be
+    alerted if heater is showing unusual power consumption
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 341: Temperature GUI IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: pH GUI
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 342: Display Temperature IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Display pH Graph
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 343: Web GUI User wants to see
-    graph of temperature over time IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to see graph of pH over time
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 350: Web GUI User wants to set
-    their temperature unit to Celsius or Kelvin IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to set an ideal pH value
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 344: Control Temperature IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: pH Warning
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 345: Web GUI User wants to set
-    Temperature IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
-  </li>
-  <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 370: Temperature Warning IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
-  </li>
-  <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 371: Web GUI User wants to be
-    alerted if temperature is instable, or not the set target IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
-  </li>
-  <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 375: Web GUI User wants to be
-    alerted if heater is showing unusual power consumption IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to be alerted if pH is instable, or not the set target
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 346: pH GUI IoT
-    <sup><i> Aquarium\Cloud\Web</i></sup>
-    UI
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: Lighting GUI
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 347: Display pH Graph IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Lighting Spectrum
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 348: Web GUI User wants to see
-    graph of pH over time IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
-  </li>
-  <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 359: Web GUI User wants to set
-    an ideal pH value IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to see
+    the current light spectrum <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 372: pH warning IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Display lighting intensity
+    graph <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 351: Web GUI User wants to be
-    alerted if pH is instable, or not the set target IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to see
+    graph of lighting intensity over time
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Lighting Control
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to set
+    graph for Lighting intensity <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Lighting warning
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to be
+    alerted if lighting is showing unusual power consumption
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to be
+    alerted if lighting spectrum shows unexpected change
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 352: Lighting GUI IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: KH GUI
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 353: Lighting Spectrum IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Display KH Graph
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 357: Web GUI User wants to see
-    the current light spectrum IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
-  </li>
-  <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 354: Display lighting intensity
-    graph IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
-  </li>
-  <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 358: Web GUI User wants to see
-    graph of lighting intensity over time IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
-  </li>
-  <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 355: Lighting Control IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
-  </li>
-  <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 356: Web GUI User wants to set
-    graph for Lighting intensity IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
-  </li>
-  <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 373: Lighting warning IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
-  </li>
-  <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 374: Web GUI User wants to be
-    alerted if lighting is showing unusual power consumption IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
-  </li>
-  <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 376: Web GUI User wants to be
-    alerted if lighting spectrum shows unexpected change IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to see
+    graph of KH over time <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 360: KH GUI IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: WebCam Stream
+    <sup><i>IoT Aquarium\Cloud</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 361: Display KH Graph IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: WebCam Stream Display
+    <sup><i>IoT Aquarium\Cloud</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 362: Web GUI User wants to see
-    graph of KH over time IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to see a
+    video live stream of their aquarium <sup><i>IoT Aquarium\Cloud</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to see a
+    timelapse of their aquarium <sup><i>IoT Aquarium\Cloud</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 364: WebCam Stream GUI IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: Event GUI
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 365: WebCam Stream Display IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: CRUD Events
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 366: Web GUI User wants to see
-    a video live stream of their aquarium IoT Aquarium
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to CRUD
+    water changes in percent <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 367: Web GUI User wants to see
-    a timelapse of their aquarium IoT Aquarium
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to CRUD
+    adding / removing livestock <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
-  <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 369: Display Power consumption
-    IoT Aquarium
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to CRUD
+    adding / removing plants <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to CRUD
+    adding / removing hardscape <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__epic">
-    <fa-icon [icon]="faCrown"></fa-icon>Epic 377: Event GUI IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: Filter GUI
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__feature">
-    <fa-icon [icon]="faTrophy"></fa-icon>Feature 378: CRUD Events IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Filter warning
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 379: Web GUI User wants to
-    CRUD water changes in percent IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to be
+    warned if filter shows unusual power consumption
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Filter control
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 380: Web GUI User wants to
-    CRUD adding / removing livestock IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to turn
+    on / off filter <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__epic">
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: TDS GUI
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: TDS Visualization
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 381: Web GUI User wants to
-    CRUD adding / removing plants IoT <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to see
+    Graph of their TDS over time <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: TDS Warning
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
   </li>
   <li class="requirements__user-story">
-    <fa-icon [icon]="faBook"></fa-icon>User Story 382: Web GUI User wants to
-    CRUD adding / removing hardscape IoT
-    <sup><i> Aquarium\Cloud\Web UI</i></sup>
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to be
+    warned in case of unusual TDS values
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__epic">
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: CO2 GUI
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: CO2 Control
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to set
+    timeframe for when CO2 will be injected
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__epic">
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: CO2 sensor
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__epic">
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: TDS sensor
+    <sup><i>IoT Aquarium\Embedded</i></sup>
+  </li>
+  <li class="requirements__epic">
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: Power GUI
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Display Power consumption
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to see
+    graph of power consumption over time
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Power consumption warning
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to be
+    warned if power consumption is unusual
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: Power Control
+    <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: Web GUI User wants to turn
+    on / off power ports <sup><i>IoT Aquarium\Cloud\Web UI</i></sup>
+  </li>
+  <li class="requirements__epic">
+    <fa-icon [icon]="faCrown"></fa-icon> Epic: MQTT Server
+    <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: MQTT Subscription Endpoints
+    <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    subscribe to Temperature <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    subscribe to Power consumptions <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    subscribe to TDS <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    subscribe to KH <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    subscribe to Lighting intensity <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    subscribe to Lighting spectrum <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    subscribe to pH <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    subscribe to Flow rate <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__feature">
+    <fa-icon [icon]="faTrophy"></fa-icon> Feature: MQTT Publishing Endpoints
+    <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    publish Temperature <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    publish Power consumptions <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    publish TDS <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    publish KH <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    publish Lighting intensity <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    publish Lighting spectrum <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    publish pH <sup><i>IoT Aquarium\Cloud\API</i></sup>
+  </li>
+  <li class="requirements__user-story">
+    <fa-icon [icon]="faBook"></fa-icon> User Story: MQTT Server User wants to
+    publish Flow rate <sup><i>IoT Aquarium\Cloud\API</i></sup>
   </li>
 </ul>
+
 
 <i>This project is still in development, check in later for new updates!</i>

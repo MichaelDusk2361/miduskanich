@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ASiaComponent } from './a-sia/a-sia.component';
+import { CertificatesComponent } from './certificates/certificates.component';
 import { CurriculumVitaeComponent } from './curriculum-vitae/curriculum-vitae.component';
 import { IotAquariumExposeeComponent } from './iot-aquarium-exposee/iot-aquarium-exposee.component';
 import { IotAquariumComponent } from './iot-aquarium/iot-aquarium.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
       }
     ],
   },
+  {path:'certificates', component: CertificatesComponent},
   { path: '**', component: CurriculumVitaeComponent },
 ];
 
