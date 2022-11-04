@@ -8,7 +8,6 @@ import { faMobileScreen } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./about-me.component.scss'],
 })
 export class AboutMeComponent {
-  faGithub = faGithub;
   faMail = faEnvelope;
   faLocation = faCompass;
   faTel = faMobileScreen;

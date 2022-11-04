@@ -11,6 +11,11 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillComponent } from './skill/skill.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { InterestsComponent } from './interests/interests.component';
+import { ASiaComponent } from './a-sia/a-sia.component';
+import { IotAquariumComponent } from './iot-aquarium/iot-aquarium.component';
+import { CurriculumVitaeComponent } from './curriculum-vitae/curriculum-vitae.component';
+import { IotAquariumExposeeComponent } from './iot-aquarium-exposee/iot-aquarium-exposee.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { ProjectsComponent } from './projects/projects.component';
     AboutMeComponent,
     SkillsComponent,
     SkillComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    InterestsComponent,
+    ASiaComponent,
+    IotAquariumComponent,
+    CurriculumVitaeComponent,
+    IotAquariumExposeeComponent
   ],
   imports: [
     BrowserModule,

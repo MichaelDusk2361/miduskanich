@@ -1,0 +1,310 @@
+<h1 class="title">Social Impulse Analysis</h1>
+<p>
+  <i>Michael Duskanich, 30-Oct-2022</i>
+</p>
+<p>
+  <i>
+    You can check out development at:
+    <a target="_blank" href="https://a-sia.miduskanich.com"
+      >a-sia.miduskanich.com</a
+    ></i
+  >
+</p>
+<p>
+  <i>
+    You can find a snapshot of our repository at:
+    <a target="_blank" href="https://github.com/MichaelDusk2361/INNO2_A-SIA"
+      >github.com/MichaelDusk2361/INNO2_A-SIA</a
+    ></i
+  >
+</p>
+<h1>Motivation and Background</h1>
+<p>
+  As part of the subject <i>Innovation Lab</i> we had to work on a chosen
+  project in groups of five. The project we chose concerns itself with
+  <a target="_blank" href="https://de.wikipedia.org/wiki/Soziale_Impulsanalyse">
+    <i>social impulse analysis</i>
+  </a>
+  , and will run over the course of three semesters. I developed a major part of
+  this application and am also project manager, overseeing development and
+  requirements engineering.
+</p>
+<p>
+  Social impulse analysis is all about recording, visualizing, and evaluating
+  social connections within a group. A software developed in 2010 already
+  provides a basis for this project:
+</p>
+<div>
+  <img src="assets/a-sia_old.png" alt="screenshot of old a-sia application" />
+</div>
+<figcaption>The 2010 developed A-SIA interface</figcaption>
+<p>
+  As it turned out, the software <i>A-SIA</i>, became outdated, leading to the
+  main task: Redesigning the frontend with a modern framework, as well as
+  outsourcing resource heavy computation to a server-side application.
+</p>
+<h2>What is the theoretical background of this app?</h2>
+<p>
+  A-SIA was a software for modeling teams and social networks. The tool
+  supported the recording of the influencing structures, which could either be
+  entered manually or be automatically generated from answered questionnaires.
+  The relationship patterns collected in this way were graphically displayed and
+  support the processing of social and group dynamic phenomena in teams.
+  Furthermore, it simulated What-If scenarios, visualizing group dynamic
+  effects.
+</p>
+<h2>Why does it have to be reworked?</h2>
+<p>
+  A-SIA was developed with Microsoft Silverlight, now unsuitable for modern app
+  development. Moreover, a lot of computation is done client-side. A visual
+  refactoring, as well as a redistribution of server-side calculation is
+  required.
+</p>
+<h2>Who is the target audience / customer?</h2>
+<p>
+  A-SIA was used by a multitude of different companies. This project, however,
+  does not necessarily need to be deployment ready with multiple pricing
+  options. The focus lies on a well-documented and future-proof web application.
+</p>
+<h2>What are the main features of the application?</h2>
+<p>
+  Visualizing a sociogram: A sociogram consists of actors and relations. Those
+  will have to be created manually (and possibly generated via an auto generated
+  form) within a user interface, which is displayed as an undirected graph.
+  Trust, mistrust, irritation, insistency and reflection are metrics that can be
+  helpful for a more descriptive display. Different arrangements and filtering
+  options should be available.
+</p>
+<p>
+  Simulation: The prominent premise of this application is, that it can simulate
+  social dynamics. For example, an actor can be selected to propose an idea.
+  Then, the user of the software can step through the simulation. The algorithm
+  for this simulation will be provided.
+</p>
+<p>
+  Backend: Data (sociograms) can be stored and loaded from a database.
+  Furthermore, the computation will be done server-side, reducing the load on
+  the client.
+</p>
+<h2>What are non-targets of this project?</h2>
+<p>Improving the simulation algorithm.</p>
+<p>A mobile first approach.</p>
+<p>Keeping the calculation client-side.</p>
+<h1>Visual prototyping</h1>
+<p>
+  In my opinion, visual prototyping is the best way to communicate with your
+  client which requirements are expected, and how they are to be implemented. I
+  made mockups of large parts of the application in
+  <a target="_blank" href="https://figma.com"><i>Figma</i></a
+  >:
+</p>
+<img src="assets/a-sia_mockup-1.png" alt="" />
+<figcaption>General UI elements</figcaption>
+<img src="assets/a-sia_mockup-2.png" alt="" />
+<figcaption>The main Graph Editor</figcaption>
+<img src="assets/a-sia_mockup-3.png" alt="" />
+<figcaption>The Graph Editor with the Simulation panel opened</figcaption>
+<p>
+  Parallel to designing the user interface, we also defined and estimated User
+  Stories.
+</p>
+<h2>Architecture</h2>
+<h3>Environment, Frameworks and Tools</h3>
+<p>
+  This project requires a full stack development. As the project might be
+  expanded in the future, it must be well documented.
+</p>
+<b>Frontend:</b>
+<ul>
+  <li>Angular</li>
+  <li>Jasmin / Karma</li>
+  <li>Compodoc</li>
+  <li>SCSS</li>
+</ul>
+
+<p>
+  As there already exists prior knowledge with the MEAN stack, Angular was
+  chosen as a frontend Framework. Angular natively includes Jasmin and Karma,
+  being the obvious choice for unit testing. For automatic code documentation,
+  Compodoc was chosen – a popular open source, Angular-friendly tool.
+</p>
+<b>Backend:</b>
+<ul>
+  <li>ASP.NET</li>
+  <li>Neo4J</li>
+  <li>Docker and docker compose</li>
+</ul>
+<p>
+  We are already familiar with ASP.NET, so we are using it to build the REST
+  api. As there will be a lot of calculations and processing related to graphs,
+  a graph database is the obvious choice. Neo4J provides a free and easy to use
+  community edition. Docker and Docker compose is suitable as there are multiple
+  deployment targets, and because it is easier to use, document, and understand
+  than manual deployment.
+</p>
+<b>Collaboration & Tooling</b>
+<ul>
+  <li>ALM - Azure DevOps</li>
+  <li>Communication - Zoom, Discord</li>
+  <li>VC - Azure DevOps (Snapshot available on GitHub)</li>
+  <li>Mockups - Figma</li>
+  <li>Docker (compose) for deployment</li>
+</ul>
+<h3>System Description</h3>
+<img src="assets/a-sia_deployment-diagram.png" alt="Deployment Diagram" />
+<figcaption>Deployment Diagram</figcaption>
+<b>Components</b>
+<p>
+  Our deployment runs through docker compose. The communication between
+  components works through external docker volumes, and the auto generated
+  network. SSL certificates are authored by lets-encrypt. Our deployment builds
+  on evgeniy-khist’s auto TLS generation and renewal repository.
+</p>
+<p>The deployment structure is split into following components:</p>
+<ul>
+  <li>
+    Nginx reverse proxy
+    <ul>
+      <li>
+        The reverse proxy forwards requests to the statically served frontend or
+        asp.net backend.
+      </li>
+      <li>
+        The reverse proxy does https termination (so we can use http behind the
+        proxy, simplifying the whole process)
+      </li>
+      <li>
+        The main issue that usually arises with full stack docker deployments is
+        easy management of https. It’s a bit of a chicken and egg problem.
+        Without a ssl certificate, we can’t be reached by lets-encrypt (due to
+        nginx not starting), but without lets-encrypt we can’t get proper ssl
+        certificates. There are many public repositories available online, that
+        try to solve this issue. It basically works by running a shell script,
+        that inspects the config.env file and generated dummy ssl certificates
+        for every defined domain.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Certbot
+    <ul>
+      <li>
+        Certbot is a tool that provides ssl certificates, default configurations
+        and auto renewal of ssl certificates.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Cron
+    <ul>
+      <li>
+        A cron job that checks daily for renewal of ssl certificates, and
+        triggers certbot if it is time to do so.
+      </li>
+    </ul>
+  </li>
+  <li>
+    a-sia-backend
+    <ul>
+      <li>
+        An ASP.NET backend that handles all requests by the frontend, and
+        further communicates with the neo4j database.
+      </li>
+      <li>
+        The dockerfile building this service can be found at /src/A-SIA2WebAPI
+      </li>
+      <li>
+        The docker image is being pulled from a docker repository, in this case
+        Docker hub. This enables easy deployment through the pipeline.
+      </li>
+    </ul>
+  </li>
+  <li>
+    a-sia-frontend
+    <ul>
+      <li>
+        A nginx server that statically serves the build output from angular.
+      </li>
+      <li>
+        The static content is copied into the docker image when running the
+        dockerfile found at /src/A-SIA2FrontendAngular, which is why we don’t
+        need any extra docker volumes.
+      </li>
+      <li>
+        This could also have been served directly from the reverse proxy, but
+        this way it is more flexible and expandable – although at the cost of
+        neglectable milliseconds latency.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Neo4j
+    <ul>
+      <li>The Graph database holding our data.</li>
+      <li>
+        The database runs independent of the reverse proxy, as it uses different
+        ports, and doesn’t utilize https. Calls from the backend to the database
+        and back never leave the local network.
+      </li>
+      <li>It can also be accessed through a browser connection</li>
+      <li>
+        We are using the bolt protocol, the username and password are stored in
+        the db.env file, given the password wasn’t changed after running the
+        database for the first time.
+      </li>
+    </ul>
+  </li>
+</ul>
+<b>Routes</b>
+<ul>
+  <li>
+    &lt;domain&gt;.com:7474/browser
+    <ul>
+      <li>
+        Leads to the neo4j browser, which is used to interface with our database
+        remotely. It runs over http, which is why your browser might warn you.
+      </li>
+    </ul>
+  </li>
+  <li>
+    &lt;domain&gt;.com:7687
+    <ul>
+      <li>
+        The connection we are using to connect directly to the database, for
+        example from asp.net – we are using the bolt protocol.
+      </li>
+    </ul>
+  </li>
+  <li>
+    api.&lt;domain&gt;.com:443
+    <ul>
+      <li>The domain to our backend, mainly called by our frontend.</li>
+    </ul>
+  </li>
+  <li>
+    api.&lt;domain&gt;.com:443/swagger
+    <ul>
+      <li>
+        A swagger page of our domain – it lists all endpoints and data models
+        and is especially useful for quick requests and debugging.
+      </li>
+    </ul>
+  </li>
+  <li>
+    a-sia.&lt;domain&gt;.com:443
+    <ul>
+      <li>
+        The frontend, by which users access the software. Realistically it will
+        be configured to run under &lt;domain&gt;.com:443 instead of
+        a-sia.&lt;domain&gt;.com:443.
+      </li>
+    </ul>
+  </li>
+</ul>
+<b>API</b>
+<p>
+  You can find the REST api under
+  <a target="_blank" href="https://api.a-sia.miduskanich.com/swagger"
+    >api.a-sia.miduskanich.com/swagger</a
+  >
+</p>

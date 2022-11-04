@@ -1,15 +1,27 @@
 @import "../../assets/colors.scss";
 @import "../../assets/shadows.scss";
 @import "../../assets/breakpoints.scss";
-:host {
-  @include media(">tablet") {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 4rem;
+
+.projects{
+  &__title {
+    margin-bottom: 5rem;
+  }
+  &__projects {
+    @include media(">tablet") {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 4rem;
+    }
   }
 }
 
 .project-card {
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: $shadow-blur-big;
+    cursor: pointer;
+  }
   border-radius: .2rem;
   background-color: $color-1;
   color: $color-5;

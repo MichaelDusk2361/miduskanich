@@ -1,0 +1,366 @@
+<h1>Motivation / Hintergrund</h1>
+<p>
+  Aquaristik ist eine Tätigkeit, der auf der ganzen Welt nachgegangen wird.
+  Darunter fällt das Pflegen von Fischen und Pflanzen in Süß- und
+  Meerwasseraquarien. Im Folgenden wird ausschließlich die Süßwasseraquaristik
+  behandelt – Aquarien ohne salzhaltiges Wasser.
+</p>
+<p>
+  In der Aquaristik können viele Probleme auftreten. Wasserparameter wie
+  Temperatur, pH, Karbonathärte, Flussstärke, Lichtstärke, Schwermetalle und
+  Ammoniumgehalt sind nur ein Teil der Dinge mit denen sich Aquarianer/-innen
+  auseinandersetzen müssen. Oftmals führt dies bei schlecht informierten
+  Einsteigern und Einsteigerinnen zu Problemen – Algenbefall, kranke bzw.
+  kurzlebige Fische und schlechte Pflanzenentwicklung sind Beispiele dafür.
+</p>
+<p>
+  Jedoch erfahren auch kenntnisreiche Aquarianer/-innen Komplikationen mit ihrem
+  Hobby. Fehlerstellen in Filterpumpen und Heizstäben können innerhalb kürzester
+  Zeit verheerende Auswirkungen haben.
+</p>
+<p>
+  Aufgrund dessen soll nach einer Recherche im Bereich Aquaristik und Internet
+  of Things (IoT) ein Prototyp eines IoT Warn-, Steuer- und
+  Datenaufbereitungssystems investigiert werden. Die Fernabfrage von Parametern,
+  die Erfassung von Ereignissen und die Überwachung von kritischen Geräten
+  stehen dabei im Vordergrund. Dadurch soll nicht nur frühzeitig vor Problemen
+  gewarnt, sondern auch die erfassten Daten und Ereignisse so aufgearbeitet
+  werden, sodass auf mögliche Probleme zurückgeschlossen und dadurch ein
+  Lernergebnis erzielt werden kann. Außerhalb des Rahmens dieser Arbeit steht
+  die Entwicklung eines kommerziellen Produktes, es gilt sich nur mit einem
+  funktionalen Prototyp zu befassen.
+</p>
+<h1>Fragestellung</h1>
+<p>
+  <b>Kernfrage 1:</b> Wie kann ein IoT Warn-, Steuer- und
+  Datenaufbereitungssystem für Aquarien realisiert werden?
+</p>
+<p>
+  <b>Unterfrage A:</b> Was sind die relevanten Parameter, welche eine Auswirkung
+  auf das Ökosystem eines Süßwasseraquariums haben?
+</p>
+<p>
+  <b>Unterfrage B:</b> Welche Sensoren und Aktoren existieren in Bezug auf
+  Aquarien?
+</p>
+<p>
+  <b>Unterfrage C:</b> Welche Fehlerstellen bestehen in konventioneller
+  Aquariumtechnik?
+</p>
+<p>
+  <b>Unterfrage D:</b> Welche Serverarchitektur wäre für einen solchen
+  Prototypen in Betracht zu ziehen?
+</p>
+<h1>Methoden</h1>
+<h2>Kernfrage 1</h2>
+<i>
+  Wie kann ein IoT Warn-, Steuer- und Datenaufbereitungssystem für Aquarien
+  realisiert werden?
+</i>
+<p>
+  <b> Prototypenentwicklung </b>
+</p>
+<p>Der Prototyp wird aus drei Gebieten bestehen:</p>
+<ol>
+  <li>
+    Der Sensorik, welche die Daten erheben und den Aktoren, die auf
+    Steuerbefehle reagieren. Dabei werden jene Daten erhoben, welche als
+    Ergebnis der Unterfrage A und Unterfrage C als wichtig erachtet werden, bzw.
+    realistisch umzusetzen sind.
+  </li>
+  <li>
+    Dem Server, welcher Anfragen verarbeitet und Warnungen / Steuerungsbefehle
+    ausschickt.
+  </li>
+  <li>
+    Ein Web-GUI welches die erhobenen Daten visualisiert. Weiters soll es
+    ermöglichen, Ereignisse zu erfassen, wie z.B. Wasserwechsel oder das
+    Hinzufügen von Pflanzen und Lebewesen.
+  </li>
+</ol>
+<p>
+  Das detaillierte Requirements-Engineering wird auf Azure DevOps zu finden
+  sein. Außerdem soll ständig eine Bill of Materials (BOM) geführt werden.
+</p>
+<p>
+  <b>Erwartetes Ergebnis: </b>
+</p>
+<p>
+  Ein Prototyp, der einen Teil von den in Unterfrage A erhobenen Parameter
+  erfasst, darstellt und gegebenenfalls bei untypischen Werten bzw. bei
+  aufgetretenen Fehlern (aus Unterfrage C bekannt) den Benutzer benachrichtigt.
+  Die Architektur soll aus Unterfrage D hervorgehen. Zudem soll eine BOM, die
+  alle involvierten Bauteile und Materialien auflistet, hervorgehen.
+</p>
+<h3>Unterfrage A</h3>
+<p>
+  <i>
+    Was sind die relevanten Parameter, welche eine Auswirkung auf das Ökosystem
+    eines Süßwasseraquariums haben?
+  </i>
+</p>
+<p><b> Recherche </b></p>
+<p>
+  Um den Rahmen des Prototyps genau definieren zu können, wird eine Erhebung der
+  relevantesten Parameter, die eine Auswirkung auf das Ökosystem eines
+  Süßwasseraquariums haben, durchgeführt.
+</p>
+<p><b> Erwartetes Ergebnis: </b></p>
+<p>
+  Eine Aufführung an Parametern, mit einer groben Klassifizierung anhand ihrer
+  Einflussstärke. Somit kann eine Priorisierung bei der Entwicklung des
+  Prototyps festgelegt werden.
+</p>
+<p>Infrage stehende Literatur: <a href="projects/iot-aquarium/exposee/#[1]">[1]</a> <a href="projects/iot-aquarium/exposee/#[2]">[2]</a> <a href="projects/iot-aquarium/exposee/#[3]">[3]</a></p>
+<h3>Unterfrage B</h3>
+<p><i>Welche Sensoren und Aktoren existieren in Bezug auf Aquarien?</i></p>
+<p><b>Produktvergleich</b></p>
+<p>
+  Es sollen Sensoren und Aktoren, die in Bezug auf Aquarien existieren, bestimmt
+  werden. Die Sensoren und Aktoren sollen jeweils einem oder mehreren Parametern
+  aus der Unterfrage A zugeordnet werden. Verschiedene Ausführungen von Sensoren
+  und Aktoren sollen miteinander verglichen werden.
+</p>
+<p><b>Erwartetes Ergebnis:</b></p>
+<p>
+  Eine Aufführung von Sensoren und Aktoren, mit einer groben Klassifizierung
+  anhand ihrer Relevanz. Somit kann eine Priorisierung bei der Entwicklung des
+  Prototyps festgelegt werden.
+</p>
+<p>Infrage stehende Literatur: <a href="projects/iot-aquarium/exposee/#[1]">[1]</a> <a href="projects/iot-aquarium/exposee/#[2]">[2]</a></p>
+<h3>Unterfrage C</h3>
+<p>
+  <i> Welche Fehlerstellen bestehen in konventioneller Aquariumtechnik? </i>
+</p>
+<p><b> Experteninterview </b></p>
+<p>
+  Um die Funktionalität des Prototyps genauer zu bestimmen, soll ein Experte
+  oder eine Expertin im Bereich Aquaristik über Erfahrungen in Bezug auf
+  Fehlerstellen in Aquariumtechnik berichten.
+</p>
+<p><b> Erwartetes Ergebnis: </b></p>
+<p>
+  Eine Aufführung von bekannten Fehlerstellen, welcher folglich in der
+  Entwicklung des Prototyps besondere Aufmerksamkeit geschenkt werden soll.
+</p>
+<p>
+  Infrage stehender Experte: Gerhard Künzel, langjähriger Inhaber vom
+  Aquaristik-Fachhandel Zoo Exquisit.
+</p>
+<h3>Unterfrage D</h3>
+<p>
+  <i>
+    Welche Serverarchitektur wäre für einen solchen Prototypen in Betracht zu
+    ziehen?
+  </i>
+</p>
+<p><b> Recherche </b></p>
+<p>
+  IoT basierte Anwendungen heben sich durch ihre hohe Anzahl von Serveranfragen
+  und Datenmengen hervor. Im Zuge dessen müssen Entscheidungen bezüglich
+  Datenbank, Kommunikationsprotokoll und Serverarchitektur getroffen werden.
+</p>
+<p><b> Erwartetes Ergebnis: </b></p>
+<p>
+  Eine ausgewählte Architektur für die Entwicklung des IoT Prototypen, mit
+  Begründungen weswegen die resultierende Architektur gewählt wurde.
+</p>
+<p>Infrage stehende Literatur: <a href="projects/iot-aquarium/exposee/#[4]">[4]</a> <a href="projects/iot-aquarium/exposee/#[5]">[5]</a> <a href="projects/iot-aquarium/exposee/#[6]">[6]</a></p>
+<h1>Zeitplan</h1>
+<table>
+  <tr>
+    <th>Nr</th>
+    <th>Name</th>
+    <th>Plan</th>
+    <th>Ist</th>
+  </tr>
+  <tr>
+    <td>M1</td>
+    <td>Projekt gestartet</td>
+    <td>07.10.2022</td>
+    <td>07.10.2022</td>
+  </tr>
+  <tr>
+    <td>M2</td>
+    <td>Zwischenabgabe Exposé</td>
+    <td>16.10.2022</td>
+    <td>16.10.2022</td>
+  </tr>
+  <tr>
+    <td>M3</td>
+    <td>Literaturreview fertig</td>
+    <td>01.11.2022</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>M4</td>
+    <td>Serverarchitektur erhoben</td>
+    <td>10.11.2022</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>M5</td>
+    <td>Abgabe Exposé</td>
+    <td>10.11.2022</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>M6</td>
+    <td>Recherche über relevante Parameter abgeschlossen</td>
+    <td>17.11.2022</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>M7</td>
+    <td>Erhebung von Sensoren und Aktoren abgeschlossen</td>
+    <td>24.11.2022</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>M8</td>
+    <td>Identifikation von bekannten Fehlerstellen abgeschlossen</td>
+    <td>1.12.2022</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>M9</td>
+    <td>Zwischenabgabe Paper</td>
+    <td>09.12.2022</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>M10</td>
+    <td>Fertigstellung des Prototyps</td>
+    <td>10.01.2022</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>M11</td>
+    <td>Erhebung der BOM fertig</td>
+    <td>14.01.2022</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>M12</td>
+    <td>Abgabe Paper</td>
+    <td>31.01.2022</td>
+    <td></td>
+  </tr>
+</table>
+<h1>Gliederung der Arbeit</h1>
+<ul>
+  <li>Titel</li>
+  <li>Inhaltsverzeichnis</li>
+  <li>Abstract (Englisch)</li>
+</ul>
+<ol>
+  <li>
+    Einleitung
+    <ol>
+      <li>Thema, Forschungsgegenstand</li>
+      <li>Forschungsfragen</li>
+      <li>Ziel</li>
+      <li>Struktur</li>
+    </ol>
+  </li>
+  <li>Literaturreview (Unterfrage A)</li>
+  <li>Produktvergleich (Unterfrage B)</li>
+  <li>Experteninterview (Unterfrage C)</li>
+  <li>Literaturreview (Unterfrage D)</li>
+  <li>
+    Entwicklung des Prototyps (Kernfrage 1)
+    <ol>
+      <li>Beschreibung des Embedded Systems</li>
+      <li>Dokumentation der Serverarchitektur</li>
+      <li>Beschreibung der Funktionalität anhand der Server-API und GUI</li>
+    </ol>
+  </li>
+  <li>
+    Diskussion
+    <ol>
+      <li>Fragestellung und Beantwortung</li>
+      <li>Ergebnisse der Methodik</li>
+    </ol>
+  </li>
+  <li>
+    Schluss
+    <ol>
+      <li>Zusammenfassung</li>
+      <li>Reflexion</li>
+    </ol>
+  </li>
+  <li>Anhang und Verzeichnisse</li>
+</ol>
+<h1>Literaturverzeichnis</h1>
+<table class="literature">
+  <tr id="[1]">
+    <td>[1]</td>
+    <td>
+      C. A. Francis, J. M. Beman und M. M. M. Kuypers, New processes and players
+      in the nitrogen cycle: the microbial ecology of anaerobic and archaeal
+      ammonia oxidation, The ISME Journal 1, 2007, pp. 19-27.
+    </td>
+  </tr>
+  <tr id="[2]">
+    <td>[2]</td>
+    <td>R. Riehl, Aquarium Atlas Vol. 3, Steven Simposon Books, 1998.</td>
+  </tr>
+  <tr id="[3]">
+    <td>[3]</td>
+    <td>
+      H. Roberts und B. S. Palmeiro, „Toxicology of Aquarium Fish,“ Veterinary
+      Clinics of North America: Exotic Animal Practice, Bd. 11, Nr. 2, pp.
+      359-374, 2008.
+    </td>
+  </tr>
+  <tr id="[4]">
+    <td>[4]</td>
+    <td>
+      S. Rautmare und D. M. Bhalerao, „MySQL and NoSQL database comparison for
+      IoT application,“ in 2016 IEEE International Conference on Advances in
+      Computer Applications (ICACA), IEEE, 2016, pp. 235-238.
+    </td>
+  </tr>
+  <tr id="[5]">
+    <td>[5]</td>
+    <td>
+      S. Krčo, B. Pokrić und F. Carrez, „Designing IoT architecture(s): A
+      European perspective,“ in 2014 IEEE World Forum on Internet of Things
+      (WF-IoT), IEEE, 2014, pp. 79-84.
+    </td>
+  </tr>
+  <tr id="[6]">
+    <td>[6]</td>
+    <td>
+      M. Collina, G. E. Corazza und A. Vanelli-Coralli, „Introducing the QEST
+      broker: Scaling the IoT by bridging MQTT and REST,“ in 2012 IEEE 23rd
+      International Symposium on Personal, Indoor and Mobile Radio
+      Communications-(PIMRC), IEEE, 2012, pp. 36-41.
+    </td>
+  </tr>
+  <tr id="[7]">
+    <td>[7]</td>
+    <td>
+      L. Yi-Bing und T. Hung-Chun, FishTalk: An IoT-Based Mini Aquarium System,
+      Bd. 7, IEEE, 2019, pp. 35457-35469.
+    </td>
+  </tr>
+  <tr id="[8]">
+    <td>[8]</td>
+    <td>
+      B. F. R. a. S. E. Siregar, Monitoring the Value of Water Quality and
+      Condition Parameters Using the Open Sensor Aquarium., Bd. 1255, Journal of
+      Physics: Conference Series Vol. 1255. No. 1. IOP Publishing, 2019, p.
+      012036.
+    </td>
+  </tr>
+  <tr id="[9]">
+    <td>[9]</td>
+    <td>
+      M. Cleal, A. Gibbon, B. D. Fontana und M. O. Parker, „The importance of
+      pH: How aquarium water is affecting behavioural responses to drug exposure
+      in larval zebrafish,“ Pharmacology Biochemistry and Behavior, Bd. 199, p.
+      173066, 2020.
+    </td>
+  </tr>
+</table>

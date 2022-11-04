@@ -1,9 +1,14 @@
-<ng-container *ngFor="let project of projects">
-  <div class="project-card">
-    <img class="project-card__image" [src]="project.image" />
-    <div class="project-card__text">
-      <h2 class="project-card__title">{{ project.title }}</h2>
-      <p class="project-card__description">{{ project.description }}</p>
+<mid-heading class="projects__title" variant="blue-strike">
+  Projects
+</mid-heading>
+<div class="projects__projects">
+  <ng-container *ngFor="let project of projects">
+    <div class="project-card" (click)="navigateToProjectArticle(project.url)">
+      <img class="project-card__image" [src]="project.image" />
+      <div class="project-card__text">
+        <h2 class="project-card__title">{{ project.title }}</h2>
+        <p class="project-card__description">{{ project.description }}</p>
+      </div>
     </div>
-  </div>
-</ng-container>
+  </ng-container>
+</div>

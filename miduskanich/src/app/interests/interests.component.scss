@@ -1,0 +1,22 @@
+@import "../../assets/colors.scss";
+@import "../../assets/shadows.scss";
+@import "../../assets/breakpoints.scss";
+
+.interests {
+  &__wrapper {
+    display: grid;
+    place-content: center;
+  }
+  &__title {
+    margin-bottom: 5rem;
+  }
+  &__description {
+    font-size: 1.8rem;
+    max-width: 50rem;
+  }
+  &__interests {
+    max-width: 50rem;
+    font-size: 1.8rem;
+    list-style: circle;
+  }
+}

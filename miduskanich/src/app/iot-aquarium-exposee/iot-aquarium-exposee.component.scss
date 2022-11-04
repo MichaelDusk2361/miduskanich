@@ -1,0 +1,81 @@
+@import "../../assets/colors.scss";
+@import "../../assets/shadows.scss";
+@import "../../assets/breakpoints.scss";
+:host {
+  @include media("<tablet") {
+
+    max-width: 50rem;
+    margin: 0 auto;
+    background-color: $color-5;
+  }
+  @include media(">=tablet") {
+    width: 70rem;
+    margin: 0 auto;
+    background-color: $color-5;
+  }
+  @include media(">=desktop") {
+    width: 100rem;
+    margin: 0 auto;
+    background-color: $color-5;
+  }
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+p {
+    margin: 1rem 0;
+}
+ol {
+  padding-left: 2rem;
+  counter-reset: section;
+  list-style-type: none;
+  li::before {
+    margin-left: -2rem;
+    counter-increment: section;
+    content: counters(section, ".") " ";
+  }
+  li {
+    margin-left: 2rem;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100rem;
+}
+th {
+  text-align: left;
+  padding: 1rem 0;
+}
+td {
+  max-width: 35rem;
+  border-top: 1px solid;
+  padding: 1rem 0;
+}
+
+.literature {
+    table {
+        border-collapse: separate;
+        width: 100%;
+        max-width: initial;
+      }
+      td {
+        border-top: initial;
+        padding: 1rem 0;
+      }
+}
+
+a {
+    &:link, &:visited {
+        color: $color-1;
+    }
+}

@@ -1,0 +1,173 @@
+@import "../../assets/colors.scss";
+@import "../../assets/shadows.scss";
+@import "../../assets/breakpoints.scss";
+:host {
+  @include media("<tablet") {
+    max-width: 50rem;
+    margin: 0 auto;
+    background-color: $color-5;
+  }
+  @include media(">=tablet") {
+    width: 70rem;
+    margin: 0 auto;
+    background-color: $color-5;
+  }
+  @include media(">=desktop") {
+    width: 100rem;
+    margin: 0 auto;
+    background-color: $color-5;
+  }
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+}
+h1 {
+    @include media("<tablet") {
+      font-size: 2.8rem;
+      line-height: 2.8rem;
+    }
+    @include media(">=tablet") {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+    }
+    @include media(">=desktop") {
+      font-size: 3.6rem;
+      line-height: 3.6rem;
+    }
+  }
+h2 {
+  @include media("<tablet") {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+  @include media(">=tablet") {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+  }
+  @include media(">=desktop") {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+}
+h3 {
+    @include media("<tablet") {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+      @include media(">=tablet") {
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+      }
+      @include media(">=desktop") {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+      }
+}
+p {
+  margin: 1rem 0;
+}
+ol {
+  padding-left: 2rem;
+  counter-reset: section;
+  list-style-type: none;
+  li::before {
+    margin-left: -2rem;
+    counter-increment: section;
+    content: counters(section, ".") " ";
+  }
+  li {
+    margin-left: 2rem;
+  }
+}
+.requirements {
+    list-style: none;
+    fa-icon {
+      margin-left: -3rem;
+      margin-right: 1rem;
+    }
+    &__epic{
+      
+    }
+    &__feature{
+      margin-left: 3rem;
+    }
+    &__user-story{
+      margin-left: 6rem;
+    }
+  }
+  
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100rem;
+}
+th {
+  text-align: left;
+  padding: 1rem 0;
+}
+td {
+  max-width: 35rem;
+  border-top: 1px solid;
+  padding: 1rem 0;
+}
+
+.literature {
+  table {
+    border-collapse: separate;
+    width: 100%;
+    max-width: initial;
+  }
+  td {
+    border-top: initial;
+    padding: 1rem 0;
+  }
+}
+
+a {
+  &:link,
+  &:visited {
+    color: $color-1;
+  }
+}
+figcaption {
+  text-align: center;
+  color: darken($color-1, 20%);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+img {
+  max-width: 100%;
+  box-shadow: $shadow-blur;
+}
+.title {
+  text-align: center;
+
+  font-weight: 400;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  margin-top: 4rem;
+
+  @include media("<tablet") {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    margin-bottom: 2rem;
+  }
+  @include media(">=tablet") {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    margin-bottom: 4rem;
+  }
+  @include media(">=desktop") {
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-bottom: 6rem;
+  }
+}
